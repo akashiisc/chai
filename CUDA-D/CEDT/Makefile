@@ -34,9 +34,9 @@
 
 CXX=nvcc
 ifndef CHAI_OPENCV
-CXX_FLAGS=-std=c++11
+CXX_FLAGS=-ccbin /usr/bin/g++-5 -std=c++11
 else
-CXX_FLAGS=-std=c++11 -D CHAI_OPENCV 
+CXX_FLAGS=-ccbin /usr/bin/g++-5 -std=c++11 -D CHAI_OPENCV 
 endif
 
 ifndef CHAI_CUDA_LIB

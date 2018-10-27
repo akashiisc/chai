@@ -33,7 +33,7 @@
 # 
 
 CXX=nvcc
-CXX_FLAGS=-std=c++11
+CXX_FLAGS=-ccbin /usr/bin/g++-5 -std=c++11
 
 ifndef CHAI_CUDA_LIB
     $(error CHAI_CUDA_LIB not defined. This environment variable must be defined to point to the location of the CUDA library)
